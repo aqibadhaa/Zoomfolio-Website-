@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import profilePicture from './images/IMG_9225.jpg'
 
 interface FinalRevealProps {
   startOffset: number;
@@ -42,7 +43,8 @@ export function FinalReveal({ startOffset }: FinalRevealProps) {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full blur-xl opacity-50" />
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl ring-4 ring-white">
               <ImageWithFallback
-                src="/public/images/IMG_9225.jpg"  // foto di folder public/images/
+                src={profilePicture}  // foto di folder public/images/
+                alt="Profile"
                 className="w-full h-full object-cover"
               />
             </div>
