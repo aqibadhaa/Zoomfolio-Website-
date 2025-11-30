@@ -59,7 +59,7 @@ export function FinalReveal({ startOffset }: FinalRevealProps) {
               Muhammad Tsaqib Adha
             </h1>
             <p className="text-lg md:text-lg text-gray-500 max-w-sm">
-              ingin menjadi MLOps hamdal tapi masih sering scroll tiktok
+              ingin menjadi MLOps hamdal tapi masih keseringan scroll tiktok
             </p>
 
             {/* Contact/Social Links */}
@@ -69,21 +69,21 @@ export function FinalReveal({ startOffset }: FinalRevealProps) {
             >
               <a
                 href="https://github.com/aqibadhaa"
-                className="text-sm text-gray-500 hover:text-blue-600 transition-colors tracking-wide uppercase"
+                className="text-sm text-gray-500 hover:text-blue-600 transition-colors tracking-wide"
               >
                 GitHub
               </a>
               <span className="text-gray-300">•</span>
               <a
-                href="www.linkedin.com/in/muhammad-tsaqib-adha-"
-                className="text-sm text-gray-500 hover:text-blue-600 transition-colors tracking-wide uppercase"
+                href="https://www.linkedin.com/in/muhammad-tsaqib-adha/"
+                className="text-sm text-gray-500 hover:text-blue-600 transition-colors tracking-wide"
               >
                 LinkedIn
               </a>
               <span className="text-gray-300">•</span>
               <a
                 href="mailto:tsaqibadha@gmail.com"
-                className="text-sm text-gray-500 hover:text-blue-600 transition-colors tracking-wide uppercase"
+                className="text-sm text-gray-500 hover:text-blue-600 transition-colors tracking-wide"
               >
                 Email
               </a>
