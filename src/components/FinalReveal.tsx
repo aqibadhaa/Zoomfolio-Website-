@@ -58,7 +58,7 @@ export function FinalReveal({ startOffset }: FinalRevealProps) {
             <h1 className="text-4xl md:text-5xl text-gray-900 tracking-tight">
               Muhammad Tsaqib Adha
             </h1>
-            <p className="text-lg md:text-lg text-gray-500 max-w-sm">
+            <p className="text-base md:text-base text-gray-500 max-w-sm">
               ingin menjadi MLOps hamdal tapi masih keseringan scroll tiktok
             </p>
 
