@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 const dockItems = [
     { icon: User, label: "Aboute me", color: "linear-gradient(to bottom right, #fbbf24, #f59e0b)", path: "/contacts" },
-    { icon: Image, label: "Photos", color: "linear-gradient(to bottom right, #20002c, #fbbf94, #cbb4d4)", path: "/photos" },
+    { icon: Image, label: "Photos", color: "linear-gradient(to bottom right, #20002c, #fbbf99, #cbb4d4)", path: "/photos" },
     { icon: Terminal, label: "Project", color: "linear-gradient(to bottom right, #1f2937, #111827)", path: "/terminal" },
 
 ];
