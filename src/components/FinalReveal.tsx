@@ -1,7 +1,9 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import profilePicture from './images/IMG_9225.jpg'
+import profilePicture from './images/IMG_9225.jpg';
+import Navbar from './navbar';
+import { BrowserRouter } from "react-router-dom";
 
 interface FinalRevealProps {
   startOffset: number;
@@ -13,7 +15,7 @@ export function FinalReveal({ startOffset }: FinalRevealProps) {
 
   const sectionProgress = useTransform(
     scrollY,
-    [startOffset, startOffset + 3000],
+    [startOffset, startOffset + 2000],
     [0, 1]
   );
 
@@ -24,23 +26,23 @@ export function FinalReveal({ startOffset }: FinalRevealProps) {
 
   return (
     <section ref={ref} className="h-[3000px] relative">
-      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white via-gray-50 to-yellow-100">
+      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden bg-linear-to-b from-white via-gray-50 to-yellow-100 bottom-32">
         {/* Background glow */}
         <div className="absolute inset-0 flex items-center justify-center">
           <motion.div
             style={{ opacity: photoOpacity }}
-            className="w-[600px] h-[600px] bg-gradient-to-br from-blue-500/20 via-purple-100/20 to-blue-500/20 rounded-full blur-[100px]"
+            className="w-[600px] h-[600px] bg-linear-to-br from-blue-500/20 via-purple-100/20 to-blue-500/20 rounded-full blur-[100px]"
           />
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 flex flex-col items-center gap-8 px-8">
+        <div className="relative z-10 flex flex-col items-center gap-8 px-8 bottom-6">
           {/* Profile Photo */}
           <motion.div
             style={{ scale: photoScale, opacity: photoOpacity }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full blur-xl opacity-50" />
+            <div className="absolute inset-0 bg-linear-to-br from-blue-500 to-purple-500 rounded-full blur-xl opacity-50" />
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl ring-4 ring-white">
               <ImageWithFallback
                 src={profilePicture}  // foto di folder public/images/
@@ -58,14 +60,14 @@ export function FinalReveal({ startOffset }: FinalRevealProps) {
             <h1 className="text-4xl md:text-5xl text-gray-900 tracking-tight">
               Muhammad Tsaqib Adha
             </h1>
-            <p className="text-base md:text-base text-gray-500 max-w-sm">
+            <p className="text-base md:text-base text-gray-500 max-w-auto">
               ingin menjadi MLOps hamdal tapi masih keseringan scroll tiktok
             </p>
 
             {/* Contact/Social Links */}
             <motion.div
               style={{ opacity: textOpacity }}
-              className="flex gap-6 justify-center pt-6"
+              className="flex gap-6 justify-center pt-6 mb-30"
             >
               <a
                 href="https://github.com/aqibadhaa"
@@ -88,12 +90,26 @@ export function FinalReveal({ startOffset }: FinalRevealProps) {
                 Email
               </a>
             </motion.div>
+
+
+
           </motion.div>
         </div>
 
+
         {/* Bottom spacing decoration */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-100 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-gray-100 to-transparent" />
+
       </div>
+      <BrowserRouter >
+        <Navbar></Navbar>
+      </BrowserRouter>
+
     </section>
+
+
+
+
+
   );
 }

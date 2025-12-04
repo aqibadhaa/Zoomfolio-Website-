@@ -50,7 +50,7 @@ export function RoleSection({ title, startOffset, endOffset, backgroundType }: R
 
   return (
     <section ref={ref} className="h-[8000px] relative">
-      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-white">
+      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden bg-linear-to-b from-gray-50 to-white">
 
 
         {/* Background elements based on type */}

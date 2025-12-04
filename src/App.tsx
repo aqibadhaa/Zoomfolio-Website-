@@ -28,7 +28,11 @@ export default function App() {
         backgroundType="mobile"
       />
 
-      <FinalReveal startOffset={25000} />
+      <FinalReveal startOffset={25000}>
+
+      </FinalReveal>
+
+
     </div>
   );
 }
