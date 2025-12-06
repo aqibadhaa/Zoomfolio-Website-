@@ -290,7 +290,7 @@ export function RoleSection({ title, startOffset, endOffset, backgroundType }: R
           <h2
             className="text-5xl md:text-7xl text-gray-900 tracking-tight leading-tight whitespace-pre-line drop-shadow-2xl"
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'Montserrat', sans-serif",
               textShadow: '2px 2px 0px rgba(177, 240, 251, 0.58), 4px 4px 0px rgba(204, 185, 250, 0.68), 6px 6px 0px rgba(230, 212, 107, 0.5)'
             }}
           >

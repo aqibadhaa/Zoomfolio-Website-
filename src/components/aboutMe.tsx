@@ -9,7 +9,7 @@ export function AboutMe() {
             flexDirection: 'row-reverse',
             alignItems: 'center',
             justifyContent: 'center', // INI YANG KURANG!
-            gap: '2rem',
+            gap: '3rem',
             minHeight: '90vh' // Biar centered secara vertikal juga
         }}>
             <style>
@@ -45,12 +45,15 @@ export function AboutMe() {
                 animationDelay: '0.1s',
                 opacity: 0
             }}>
-                <h1 style={{ marginTop: -20, marginBottom: 20, fontSize: 70, fontFamily: 'monospace', letterSpacing: -5, wordSpacing: -12 }}>About me.</h1>
+                <h1 style={{ marginTop: -10, marginBottom: 20, fontSize: 70, fontFamily: 'monospace', letterSpacing: -5, wordSpacing: -12, marginLeft: -2 }}>About me.</h1>
                 <HaloType></HaloType>
-                <div style={{ marginTop: 50, maxWidth: 600, textAlign: 'justify', lineHeight: 1.6, fontSize: 16, color: '#333' }}>
-                    <p>Welcome to the Internet! Once again, let me introduce myself, Im Muhammad Tsaqib Adha, but you can call me Tsaqib or Qibe. Im currently studying Informatics at Universitas Gunadarma, and im in my first semester. I have a strong passion for programming, and right now, Im focusing on a few roles that are listed on my homepage.</p>
-                    <p>Im also really interested in learning new tech stacks, which seem to keep growing and evolving every day. As a software developer, its important to adapt and stay updated with these tech stacks.</p>
-                    <p>Feel free to reach out to me through the contact page!</p>
+                <div style={{ marginLeft: 2, position: 'relative' }}>
+
+                    <div style={{ marginTop: 60, maxWidth: 600, textAlign: 'justify', lineHeight: 1.6, fontSize: 16, color: '#333' }}>
+                        <p>Welcome to the Internet! Once again, let me introduce myself, Im Muhammad Tsaqib Adha, but you can call me Tsaqib or Qibe. Im currently studying Informatics at Universitas Gunadarma, and im in my first semester. I have a strong passion for programming, and right now, Im focusing on a few roles that are listed on my homepage.</p>
+                        <p style={{ marginTop: 3 }}>Im also really interested in learning new tech stacks, which seem to keep growing and evolving every day. As a software developer, its important to adapt and stay updated with these tech stacks.</p>
+                        <p>Feel free to reach out to me through the contact page!</p>
+                    </div>
                 </div>
             </div>
 
@@ -66,17 +69,17 @@ export function AboutMe() {
                     position: 'absolute',
                     inset: 0,
                     width: '324px',
-                    height: '390px',
+                    height: '392px',
                     borderRadius: '2rem',
                     overflow: 'hidden',
                     transform: 'translate(2px, 5px)',
-                    background: 'linear-gradient(to bottom right, rgba(144, 163, 204, 0.5), rgba(102, 166, 250, 0.85))',
+                    background: 'linear-gradient(to bottom right, rgba(0, 79, 249, 0.5), rgba(102, 166, 250, 0.85))',
                     border: '2px solid rgba(125, 162, 204, 1)'
                 }}>
                     <div style={{
                         position: 'absolute',
                         inset: 0,
-                        backgroundImage: 'radial-gradient(circle, rgba(207, 218, 233, 1) 7px, transparent 0px)',
+                        backgroundImage: 'radial-gradient(circle, rgba(184, 211, 247, 1) 7px, transparent 0px)',
                         backgroundSize: '28.5px 3px'
                     }}></div>
                 </div>

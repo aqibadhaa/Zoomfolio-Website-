@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&family=Stack+Sans+Headline:wght@200..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  letter-spacing: -2px;
+  color: #1a1a1a;
+  line-height: 1.1;
+  margin: 0;
+}
+
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
 

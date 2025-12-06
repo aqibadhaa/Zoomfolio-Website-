@@ -6,7 +6,7 @@ export default function TypingGreeting() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
-    const greetings = ['Hello', 'Halo', 'Hola', 'Hallo', 'Bonjour', 'Ciao'];
+    const greetings = ['Hello!', 'Halo!', 'Hola!', 'Hallo!', 'Bonjour!', 'Ciao!', 'Konnichiwa!', 'Nihǎo!', '안녕하세요!', 'مرحبا!'];
 
     useEffect(() => {
         const currentGreeting = greetings[currentIndex];
@@ -36,10 +36,10 @@ export default function TypingGreeting() {
                         setCurrentIndex((prev) => (prev + 1) % greetings.length);
                     }
                 }
-            }, isDeleting ? 90 : 150); // Delete lebih cepat dari typing
+            }, isDeleting ? 120 : 180); // Delete lebih cepat dari typing
 
             return () => clearInterval(timer);
-        }, currentIndex === 0 && !isDeleting ? 1200 : 300);
+        }, currentIndex === 0 && !isDeleting ? 1900 : 1000);
 
         return () => clearTimeout(startDelay);
     }, [currentIndex, isDeleting]);
@@ -51,7 +51,7 @@ export default function TypingGreeting() {
                     className="text-lg md:text-lg text-gray-700"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.9 }}
+                    transition={{ duration: 1 }}
                 >
                     {displayedText}
                     <motion.span
