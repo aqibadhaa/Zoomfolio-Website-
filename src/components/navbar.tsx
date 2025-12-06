@@ -1,10 +1,10 @@
-import { Image, User, Terminal, CodeXml, UserRoundPen, HouseIcon } from "lucide-react";
+import { Image, CodeXml, UserRoundPen, HouseIcon } from "lucide-react";
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const dockItems = [
     { icon: HouseIcon, label: "Home", color: "linear-gradient(to bottom right, #26432c81, #6caaa2ff)", path: '/' },
-    { icon: UserRoundPen, label: "About me", color: "linear-gradient(to bottom right, #fbbf24, #f59e0b)", path: '/about' },
+    { icon: UserRoundPen, label: "About me", color: "linear-gradient(to bottom right, #d08b46ff, #f5b277b5)", path: '/about' },
     { icon: Image, label: "Photos", color: "linear-gradient(to bottom right, #20002c, #fbbf99, #cbb4d4)", path: "/photos" },
     { icon: CodeXml, label: "Project", color: "linear-gradient(to bottom right, #1f2937, #111827)", path: "/project" },
 

@@ -157,7 +157,7 @@ export function RoleSection({ title, startOffset, endOffset, backgroundType }: R
                   left: '0%',
                   width: '20%',
                   height: 1500,
-                  backgroundColor: '#d2e0d3',
+                  backgroundColor: '#adcfb0bf',
                   borderRadius: 12
                 }}>
 
@@ -170,7 +170,7 @@ export function RoleSection({ title, startOffset, endOffset, backgroundType }: R
                   left: '40%',
                   width: '20%',
                   height: 1500,
-                  backgroundColor: '#d2e0d3',
+                  backgroundColor: '#adcfb0bf',
                   borderRadius: 12
                 }}>
 
@@ -183,7 +183,7 @@ export function RoleSection({ title, startOffset, endOffset, backgroundType }: R
                   left: '80%',
                   width: '20%',
                   height: 1500,
-                  backgroundColor: '#d2e0d3',
+                  backgroundColor: '#adcfb0bf',
                   borderRadius: 12
                 }}>
 
