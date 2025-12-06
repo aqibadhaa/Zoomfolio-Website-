@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import profilePicture from './images/IMG_9225.jpg';
 import Navbar from './navbar';
-import { BrowserRouter } from "react-router-dom";
+
 
 interface FinalRevealProps {
   startOffset: number;
@@ -101,9 +101,9 @@ export function FinalReveal({ startOffset }: FinalRevealProps) {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-gray-100 to-transparent" />
 
       </div>
-      <BrowserRouter >
+      <>
         <Navbar></Navbar>
-      </BrowserRouter>
+      </>
 
     </section>
 

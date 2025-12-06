@@ -1,11 +1,12 @@
-import { Image, User, Terminal } from "lucide-react";
+import { Image, User, Terminal, CodeXml, UserRoundPen, HouseIcon } from "lucide-react";
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const dockItems = [
-    { icon: User, label: "Aboute me", color: "linear-gradient(to bottom right, #fbbf24, #f59e0b)", path: "/contacts" },
+    { icon: HouseIcon, label: "Home", color: "linear-gradient(to bottom right, #26432c81, #6caaa2ff)", path: '/' },
+    { icon: UserRoundPen, label: "About me", color: "linear-gradient(to bottom right, #fbbf24, #f59e0b)", path: '/about' },
     { icon: Image, label: "Photos", color: "linear-gradient(to bottom right, #20002c, #fbbf99, #cbb4d4)", path: "/photos" },
-    { icon: Terminal, label: "Project", color: "linear-gradient(to bottom right, #1f2937, #111827)", path: "/terminal" },
+    { icon: CodeXml, label: "Project", color: "linear-gradient(to bottom right, #1f2937, #111827)", path: "/project" },
 
 ];
 
@@ -88,7 +89,7 @@ export function BottomNav() {
                                             transform: 'translateX(-50%)',
                                             width: '90%',
                                             height: '4px',
-                                            backgroundColor: 'darkgray',
+                                            backgroundColor: 'lightgray',
                                             borderRadius: '50%',
                                             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
                                         }}></div>
