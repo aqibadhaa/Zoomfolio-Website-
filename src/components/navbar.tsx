@@ -15,6 +15,11 @@ export function BottomNav() {
     const navigate = useNavigate();
     const location = useLocation();
 
+    const handleNavigation = (path: string) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+    };
+
     return (
         <div style={{
             position: 'fixed',
@@ -48,7 +53,7 @@ export function BottomNav() {
                                 key={item.label}
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
-                                onClick={() => navigate(item.path)}
+                                onClick={() => handleNavigation(item.path)}
                                 style={{
                                     position: 'relative',
                                     transform: `scale(${scale})`,
