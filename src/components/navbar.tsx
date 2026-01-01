@@ -14,10 +14,11 @@ export function BottomNav() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     const navigate = useNavigate();
     const location = useLocation();
-
     const handleNavigation = (path: string) => {
         navigate(path);
-        window.scrollTo(0, 0);
+        requestAnimationFrame(() => {
+            window.scrollTo(0, 0);
+        });
     };
 
     return (

@@ -2,7 +2,7 @@ import profileImg from './images/asdasdPNG.png';
 import HaloType from './typingAboutMe'
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useRef, useLayoutEffect } from "react";
+import { useRef, useLayoutEffect, useEffect } from "react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -56,6 +56,10 @@ export function AboutMe() {
 
 
 
+    }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
     }, []);
 
 
@@ -182,7 +186,7 @@ export function AboutMe() {
                                                 fontFamily: 'monospace',
                                                 fontSize: '80px',
                                                 fontWeight: 'bold',
-                                                color: '#f8ddddcc',
+                                                color: '#474242cc',
                                                 letterSpacing: '-7px',
                                                 wordSpacing: '-20px',
                                                 margin: 0,
