@@ -317,7 +317,7 @@ export function AboutMe() {
                                         <div style={{ marginTop: 60, maxWidth: 600, textAlign: 'justify', lineHeight: 1.6, fontSize: 16, color: '#333' }}>
                                             <p>Hello World! <br></br>Once again, let me introduce myself, Im Muhammad Tsaqib Adha, but you can call me Tsaqib or Qibe. Im currently studying Informatics at Gunadarma University, and this is my first semester. I have a strong passion for programming, and right now, Im focusing on a few roles that are listed on my homepage.</p>
                                             <p style={{ marginTop: 3 }}>Im also really interested in learning new tech stacks, which seem to keep growing and evolving every day. As a software developer, its important to adapt and stay updated with these tech stacks.</p>
-                                            <p>Feel free to reach out to me through the contact page!</p>
+                                            <p>Feel free to reach out to me through the contact option!</p>
                                         </div>
                                     </div>
                                 </div>
