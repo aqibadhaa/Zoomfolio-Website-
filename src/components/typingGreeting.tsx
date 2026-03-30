@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 export default function TypingGreeting() {
     const [displayedText, setDisplayedText] = useState('');
-    const fullText = 'Welcome to my Zoomfolio website';
+    const fullText = 'Welcome to my Scrollfolio website';
 
     useEffect(() => {
         let index = 0;
